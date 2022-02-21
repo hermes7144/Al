@@ -42,7 +42,7 @@ class Solution:
                 rev, rev.next, slow = slow, rev, slow.next
             if fast:
                 slow = slow.next
-            #
+            # 팰린드롬 여부 확인
             while rev and rev.val == slow.val:
                 slow, rev = slow.next, rev.next
             return not rev
@@ -52,7 +52,8 @@ s1 = Solution()
 list1 = ListNode(1);
 list1.next = ListNode(2);
 list1.next.next = ListNode(2);
-list1.next.next.next = ListNode(1);
+list1.next.next.next = ListNode(2);
+list1.next.next.next.next = ListNode(1);
 
 print(list1)
 print(s1.isPalindrome2(list1));

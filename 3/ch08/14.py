@@ -29,7 +29,7 @@ l2.next.next = ListNode(4);
 s1 = Solution()
 print(s1.mergeTwoLists(l1, l2));
 
-            
+
 
 
         
